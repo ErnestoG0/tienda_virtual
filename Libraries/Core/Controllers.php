@@ -3,11 +3,11 @@
     {
         public function __constructor()
         {
-
+            $this->loadModel();
         }
         public function loadModel()
         {
-            //HomeModel
+            //HomeModel.php
             $class = get_class($this)."Model"; 
             $routclass  = "Models/".$model.".php";
             if(file_exists($routClass)){
